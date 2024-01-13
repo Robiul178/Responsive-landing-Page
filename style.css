@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;1,100&display=swap');
 
 * {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
 }
 
 header {
     background-color: beige;
-    padding: 50px 240px;
+    padding: 50px 180px;
+
 }
 
 nav {
@@ -28,6 +37,7 @@ nav li {
 
 nav li>a {
     text-decoration: none;
+    font-size: 24px;
     font-weight: 700;
 }
 
@@ -38,7 +48,7 @@ nav li>a {
 .banner-content {
     max-width: 800px;
     text-align: center;
-    margin: 0 auto;
+    margin: 2rem auto;
 
 }
 
@@ -63,11 +73,7 @@ nav li>a {
 
 /* Feature */
 
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 0;
-}
+
 
 .feature-container {
     display: flex;
@@ -83,15 +89,85 @@ main {
 
 .feature-content h3 {
     font-size: 45px;
-    font-weight: 700;
+    font-weight: 800;
+    color: #727272;
+}
+
+.color-gray {
+    color: black;
+}
+
+.color-red {
+    color: tomato;
 }
 
 .feature-content p {
     font-size: 1rem;
     font-weight: 200;
     color: black;
+    padding: 2rem 0;
+    letter-spacing: 2px;
 }
 
+.fact-text h3 {
+    color: var(--Dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.fact-text p {
+    color: var(--Dark-03, #131313);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 2rem 0;
+}
+
+.card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 2rem;
+}
+
+.fact-card {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.sponsor-container {
+    padding: 3rem 0;
+}
+
+.sponsor-text {
+    text-align: center;
+}
+
+.sponsor-text h3 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.sponsor-text p {
+    font-weight: 200;
+    padding: 2rem;
+    margin-bottom: 30px;
+}
+
+.sponsor-logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: beige;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
 
 
 
